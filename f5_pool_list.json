@@ -1,0 +1,320 @@
+{
+    "kind": "tm:ltm:pool:poolcollectionstate",
+    "selfLink": "https://localhost/mgmt/tm/ltm/pool?expandSubcollections=true&ver=16.1.3.3",
+    "items": [
+        {
+            "kind": "tm:ltm:pool:poolstate",
+            "name": "RIVM-RADIUS-POOL1",
+            "partition": "Common",
+            "fullPath": "/Common/RIVM-RADIUS-POOL1",
+            "generation": 1,
+            "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~RIVM-RADIUS-POOL1?ver=16.1.3.3",
+            "allowNat": "yes",
+            "allowSnat": "yes",
+            "ignorePersistedWeight": "disabled",
+            "ipTosToClient": "pass-through",
+            "ipTosToServer": "pass-through",
+            "linkQosToClient": "pass-through",
+            "linkQosToServer": "pass-through",
+            "loadBalancingMode": "round-robin",
+            "minActiveMembers": 1,
+            "minUpMembers": 0,
+            "minUpMembersAction": "failover",
+            "minUpMembersChecking": "disabled",
+            "monitor": "/Common/udp",
+            "queueDepthLimit": 0,
+            "queueOnConnectionLimit": "disabled",
+            "queueTimeLimit": 0,
+            "reselectTries": 0,
+            "serviceDownAction": "none",
+            "slowRampTime": 10,
+            "membersReference": {
+                "link": "https://localhost/mgmt/tm/ltm/pool/~Common~RIVM-RADIUS-POOL1/members?ver=16.1.3.3",
+                "isSubcollection": true,
+                "items": [
+                    {
+                        "kind": "tm:ltm:pool:members:membersstate",
+                        "name": "sscc-ias-a01p:443",
+                        "partition": "Common",
+                        "fullPath": "/Common/sscc-ias-a01p:443",
+                        "generation": 1,
+                        "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~RIVM-RADIUS-POOL1/members/~Common~sscc-ias-a01p:443?ver=16.1.3.3",
+                        "address": "131.224.64.251",
+                        "connectionLimit": 0,
+                        "dynamicRatio": 1,
+                        "ephemeral": "false",
+                        "fqdn": {
+                            "autopopulate": "disabled"
+                        },
+                        "inheritProfile": "enabled",
+                        "logging": "disabled",
+                        "monitor": "default",
+                        "priorityGroup": 0,
+                        "rateLimit": "disabled",
+                        "ratio": 1,
+                        "session": "monitor-enabled",
+                        "state": "up",
+                        "nameReference": {
+                            "link": "https://localhost/mgmt/tm/ltm/node/~Common~sscc-ias-a01p:443?ver=16.1.3.3"
+                        }
+                    },
+                    {
+                        "kind": "tm:ltm:pool:members:membersstate",
+                        "name": "sscc-ias-a01p:1812",
+                        "partition": "Common",
+                        "fullPath": "/Common/sscc-ias-a01p:1812",
+                        "generation": 1,
+                        "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~RIVM-RADIUS-POOL1/members/~Common~sscc-ias-a01p:1812?ver=16.1.3.3",
+                        "address": "131.224.64.251",
+                        "connectionLimit": 0,
+                        "dynamicRatio": 1,
+                        "ephemeral": "false",
+                        "fqdn": {
+                            "autopopulate": "disabled"
+                        },
+                        "inheritProfile": "enabled",
+                        "logging": "disabled",
+                        "monitor": "default",
+                        "priorityGroup": 1,
+                        "rateLimit": "disabled",
+                        "ratio": 1,
+                        "session": "user-disabled",
+                        "state": "up",
+                        "nameReference": {
+                            "link": "https://localhost/mgmt/tm/ltm/node/~Common~sscc-ias-a01p:1812?ver=16.1.3.3"
+                        }
+                    },
+                    {
+                        "kind": "tm:ltm:pool:members:membersstate",
+                        "name": "sscc-ias-a02p:1812",
+                        "partition": "Common",
+                        "fullPath": "/Common/sscc-ias-a02p:1812",
+                        "generation": 1,
+                        "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~RIVM-RADIUS-POOL1/members/~Common~sscc-ias-a02p:1812?ver=16.1.3.3",
+                        "address": "131.224.64.252",
+                        "connectionLimit": 0,
+                        "dynamicRatio": 1,
+                        "ephemeral": "false",
+                        "fqdn": {
+                            "autopopulate": "disabled"
+                        },
+                        "inheritProfile": "enabled",
+                        "logging": "disabled",
+                        "monitor": "default",
+                        "priorityGroup": 2,
+                        "rateLimit": "disabled",
+                        "ratio": 1,
+                        "session": "user-disabled",
+                        "state": "up",
+                        "nameReference": {
+                            "link": "https://localhost/mgmt/tm/ltm/node/~Common~sscc-ias-a02p:1812?ver=16.1.3.3"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "tm:ltm:pool:poolstate",
+            "name": "high-speedlogging-syslog",
+            "partition": "Common",
+            "fullPath": "/Common/high-speedlogging-syslog",
+            "generation": 1,
+            "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~high-speedlogging-syslog?ver=16.1.3.3",
+            "allowNat": "yes",
+            "allowSnat": "yes",
+            "ignorePersistedWeight": "disabled",
+            "ipTosToClient": "pass-through",
+            "ipTosToServer": "pass-through",
+            "linkQosToClient": "pass-through",
+            "linkQosToServer": "pass-through",
+            "loadBalancingMode": "round-robin",
+            "minActiveMembers": 0,
+            "minUpMembers": 0,
+            "minUpMembersAction": "failover",
+            "minUpMembersChecking": "disabled",
+            "monitor": "/Common/udp",
+            "queueDepthLimit": 0,
+            "queueOnConnectionLimit": "disabled",
+            "queueTimeLimit": 0,
+            "reselectTries": 0,
+            "serviceDownAction": "none",
+            "slowRampTime": 10,
+            "membersReference": {
+                "link": "https://localhost/mgmt/tm/ltm/pool/~Common~high-speedlogging-syslog/members?ver=16.1.3.3",
+                "isSubcollection": true,
+                "items": [
+                    {
+                        "kind": "tm:ltm:pool:members:membersstate",
+                        "name": "131.224.64.47:514",
+                        "partition": "Common",
+                        "fullPath": "/Common/131.224.64.47:514",
+                        "generation": 1,
+                        "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~high-speedlogging-syslog/members/~Common~131.224.64.47:514?ver=16.1.3.3",
+                        "address": "131.224.64.47",
+                        "connectionLimit": 0,
+                        "dynamicRatio": 1,
+                        "ephemeral": "false",
+                        "fqdn": {
+                            "autopopulate": "disabled"
+                        },
+                        "inheritProfile": "enabled",
+                        "logging": "disabled",
+                        "monitor": "default",
+                        "priorityGroup": 0,
+                        "rateLimit": "disabled",
+                        "ratio": 1,
+                        "session": "monitor-enabled",
+                        "state": "up",
+                        "nameReference": {
+                            "link": "https://localhost/mgmt/tm/ltm/node/~Common~131.224.64.47:514?ver=16.1.3.3"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "tm:ltm:pool:poolstate",
+            "name": "micha.ssc-campus.nl-pool-https-ipv4",
+            "partition": "Common",
+            "fullPath": "/Common/micha.ssc-campus.nl-pool-https-ipv4",
+            "generation": 915,
+            "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~micha.ssc-campus.nl-pool-https-ipv4?ver=16.1.3.3",
+            "allowNat": "yes",
+            "allowSnat": "yes",
+            "ignorePersistedWeight": "disabled",
+            "ipTosToClient": "pass-through",
+            "ipTosToServer": "pass-through",
+            "linkQosToClient": "pass-through",
+            "linkQosToServer": "pass-through",
+            "loadBalancingMode": "round-robin",
+            "minActiveMembers": 0,
+            "minUpMembers": 0,
+            "minUpMembersAction": "failover",
+            "minUpMembersChecking": "disabled",
+            "monitor": "/Common/https",
+            "queueDepthLimit": 0,
+            "queueOnConnectionLimit": "disabled",
+            "queueTimeLimit": 0,
+            "reselectTries": 0,
+            "serviceDownAction": "none",
+            "slowRampTime": 10,
+            "membersReference": {
+                "link": "https://localhost/mgmt/tm/ltm/pool/~Common~micha.ssc-campus.nl-pool-https-ipv4/members?ver=16.1.3.3",
+                "isSubcollection": true,
+                "items": [
+                    {
+                        "kind": "tm:ltm:pool:members:membersstate",
+                        "name": "test.int.ssc-campus.nl:443",
+                        "partition": "Common",
+                        "fullPath": "/Common/test.int.ssc-campus.nl:443",
+                        "generation": 915,
+                        "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~micha.ssc-campus.nl-pool-https-ipv4/members/~Common~test.int.ssc-campus.nl:443?ver=16.1.3.3",
+                        "address": "172.17.32.1",
+                        "connectionLimit": 0,
+                        "dynamicRatio": 1,
+                        "ephemeral": "false",
+                        "fqdn": {
+                            "autopopulate": "disabled"
+                        },
+                        "inheritProfile": "enabled",
+                        "logging": "disabled",
+                        "monitor": "default",
+                        "priorityGroup": 0,
+                        "rateLimit": "disabled",
+                        "ratio": 1,
+                        "session": "monitor-enabled",
+                        "state": "down",
+                        "nameReference": {
+                            "link": "https://localhost/mgmt/tm/ltm/node/~Common~test.int.ssc-campus.nl:443?ver=16.1.3.3"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "tm:ltm:pool:poolstate",
+            "name": "rivm-chprtd-va_https_pool",
+            "partition": "Common",
+            "fullPath": "/Common/rivm-chprtd-va_https_pool",
+            "generation": 610,
+            "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~rivm-chprtd-va_https_pool?ver=16.1.3.3",
+            "allowNat": "yes",
+            "allowSnat": "yes",
+            "ignorePersistedWeight": "disabled",
+            "ipTosToClient": "pass-through",
+            "ipTosToServer": "pass-through",
+            "linkQosToClient": "pass-through",
+            "linkQosToServer": "pass-through",
+            "loadBalancingMode": "round-robin",
+            "minActiveMembers": 0,
+            "minUpMembers": 0,
+            "minUpMembersAction": "failover",
+            "minUpMembersChecking": "disabled",
+            "monitor": "/Common/gateway_icmp",
+            "queueDepthLimit": 0,
+            "queueOnConnectionLimit": "disabled",
+            "queueTimeLimit": 0,
+            "reselectTries": 0,
+            "serviceDownAction": "none",
+            "slowRampTime": 10,
+            "membersReference": {
+                "link": "https://localhost/mgmt/tm/ltm/pool/~Common~rivm-chprtd-va_https_pool/members?ver=16.1.3.3",
+                "isSubcollection": true,
+                "items": [
+                    {
+                        "kind": "tm:ltm:pool:members:membersstate",
+                        "name": "rivm-chprtd-a01a.rivm.ssc-campus.nl:443",
+                        "partition": "Common",
+                        "fullPath": "/Common/rivm-chprtd-a01a.rivm.ssc-campus.nl:443",
+                        "generation": 610,
+                        "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~rivm-chprtd-va_https_pool/members/~Common~rivm-chprtd-a01a.rivm.ssc-campus.nl:443?ver=16.1.3.3",
+                        "address": "131.224.249.24",
+                        "connectionLimit": 0,
+                        "dynamicRatio": 1,
+                        "ephemeral": "false",
+                        "fqdn": {
+                            "autopopulate": "disabled"
+                        },
+                        "inheritProfile": "enabled",
+                        "logging": "disabled",
+                        "monitor": "default",
+                        "priorityGroup": 0,
+                        "rateLimit": "disabled",
+                        "ratio": 1,
+                        "session": "monitor-enabled",
+                        "state": "down",
+                        "nameReference": {
+                            "link": "https://localhost/mgmt/tm/ltm/node/~Common~rivm-chprtd-a01a.rivm.ssc-campus.nl:443?ver=16.1.3.3"
+                        }
+                    },
+                    {
+                        "kind": "tm:ltm:pool:members:membersstate",
+                        "name": "rivm-chprtd-a02a.rivm.ssc-campus.nl:443",
+                        "partition": "Common",
+                        "fullPath": "/Common/rivm-chprtd-a02a.rivm.ssc-campus.nl:443",
+                        "generation": 610,
+                        "selfLink": "https://localhost/mgmt/tm/ltm/pool/~Common~rivm-chprtd-va_https_pool/members/~Common~rivm-chprtd-a02a.rivm.ssc-campus.nl:443?ver=16.1.3.3",
+                        "address": "131.224.249.25",
+                        "connectionLimit": 0,
+                        "dynamicRatio": 1,
+                        "ephemeral": "false",
+                        "fqdn": {
+                            "autopopulate": "disabled"
+                        },
+                        "inheritProfile": "enabled",
+                        "logging": "disabled",
+                        "monitor": "default",
+                        "priorityGroup": 0,
+                        "rateLimit": "disabled",
+                        "ratio": 1,
+                        "session": "monitor-enabled",
+                        "state": "down",
+                        "nameReference": {
+                            "link": "https://localhost/mgmt/tm/ltm/node/~Common~rivm-chprtd-a02a.rivm.ssc-campus.nl:443?ver=16.1.3.3"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
